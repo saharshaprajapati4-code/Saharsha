@@ -1,29 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>forms</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information Form</title>
+</head>
 <body>
-    <h1>Personal Information Form</h1>
-<form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <label for="Contact">Contact Number:(This will be hidden)</label>
-    <input type="password" id="contact" name="contact"><br><br>
-    <label for="gender">Gender:</label>
-    <input type="radio" id="male" name="gender" value="male">Male<br>
-    <input type="radio" id="female" name="gender" value="female">female<br><br>
-    <label for="favourate city">Favourate city:</label><br>
-    <input type="checkbox" id="city1" name="city1" value="newyork">
-    new york<br>
-    <input type="checkbox" id="city2" name="city2" value="newdelhi">
-    new delhi<br>
-    <input type="checkbox" id="city3" name="city3" value="Kathmandu">
-    kathmandu<br><br>
-    <input type="submit">   
-</form>
+
+  <h1>Job Application Form</h1>
+  
+  <form action="#" method="POST">
+    
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="contact">Contact Number:</label>
+      <input type="tel" id="contact" name="contact" placeholder="123-456-7890" required    >
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+    </div>
+
+    <fieldset>
+      <legend>Gender</legend>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male" class="inline-label">Male</label><br>
+      
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" class="inline-label">Female</label><br>
+      
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other" class="inline-label">Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>The jobs you are applying for: (Select all that apply)</legend>
+      <input type="checkbox" id="job1" name="jobs" value="Teacher">
+      <label for="job1" class="inline-label">Teacher</label><br>
+      
+      <input type="checkbox" id="job2" name="jobs" value="Cook">
+      <label for="job2" class="inline-label">Cook</label><br>
+      
+      <input type="checkbox" id="job3" name="jobs" value="Programmer">
+        <label for="job3" class="inline-label">Programmer</label><br>
+    </fieldset>
+
+    <div class="form-group">
+      <label for="experience">Years of Experience:</label>
+      <select id="experience" name="experience">
+        <option value="">--Please choose an option--</option>
+        <option value="entry">0 - 1 years</option>
+        <option value="mid">2 - 5 years</option>
+        <option value="senior">5+ years</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="resume">Upload Experience Documents (PDF only):</label>
+      <input type="file" id="resume" name="resume" accept=".pdf">
+    </div>
+
+    <div class="form-group">
+      <label for="bio">Short Bio | Why do you want to work here?:</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+    </div>
+
+    <input type="submit" value="Submit Information"> 
+    
+  </form>
+
 </body>
 </html>
