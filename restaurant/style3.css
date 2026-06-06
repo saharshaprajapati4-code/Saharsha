@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-card {
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Restaurant Name */
+.restaurant-name {
+    text-align: center;
+    font-size: 42px;
+    color: darkred;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px gray;
+    margin-bottom: 10px;
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Offer Banner */
+.offer-banner {
+    background-color: gold;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 8px #888;
+}
+
+/* Menu Sections */
+.menu-section h2 {
+    color: darkgreen;
+    text-decoration: underline;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+/* Dish Names */
+.menu-item h3 {
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* Dish Description */
+.menu-item p {
+    color: #666;
+    line-height: 1.6;
+    text-indent: 40px;
+}
