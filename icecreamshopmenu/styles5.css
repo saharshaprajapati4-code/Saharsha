@@ -1,0 +1,100 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    padding: 20px;
+}
+
+.menu {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Child Selector */
+.menu > h1 {
+    color: #d63384;
+    text-align: center;
+}
+
+/* First Letter Styling */
+.intro::first-letter {
+    font-size: 2em;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* Menu Items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f8d7da;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+ul li:hover {
+    background-color: #ffb3c6;
+    transform: scale(1.05);
+}
+
+/* First Child Selector */
+ul li:first-child {
+    background-color: #ffe5b4;
+}
+
+/* nth-child Selector */
+ul li:nth-child(2) {
+    background-color: #d4edda;
+}
+
+/* Special Flavour */
+.special {
+    background-color: gold;
+    font-weight: bold;
+}
+
+/* Pseudo Elements */
+.special::before {
+    content: "⭐ ";
+}
+
+.special::after {
+    content: " ⭐";
+}
+
+/* Adjacent Sibling Selector */
+h2 + ul {
+    border: 2px dashed #d63384;
+    padding: 10px;
+}
+
+/* General Sibling Selector */
+h2 ~ p {
+    color: #555;
+    font-style: italic;
+}
+
+/* Button Styling */
+button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #b0256c;
+}
